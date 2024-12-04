@@ -1,0 +1,96 @@
+.sol-container {
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-section-sol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.main-section-img-sol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  border-top: 2px solid green;
+  border-right: 2px solid green;
+  border-bottom: 2px solid green;
+  border-radius: 18px;
+  gap: 20px;
+}
+
+.main-section-img-sol img {
+  height: 60px;
+}
+
+.main-section-img-contt-sol {
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.content-container-sol {
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-container-sol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container-sol img {
+  height: 25rem;
+  width: 35rem;
+}
+.responsive-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.features-section-sol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.features-section-sol button {
+  flex: 1;
+  margin: 0 10px;
+  height: 50px;
+  max-width: 200px;
+  border: 2px solid green;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 17px;
+}

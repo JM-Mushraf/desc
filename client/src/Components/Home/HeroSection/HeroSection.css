@@ -1,0 +1,200 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* background-image: url("../../../../public/HomeImage.jpg"); */
+  background-image: url("../../../../public/HomeImage2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  text-align: center;
+  border-radius: 21px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  height: 200px !important; /* Set a fixed height */
+  overflow: hidden; /* Prevent overflow of child elements */
+}
+
+.content {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 1; /* Ensure content stays on top of background */
+}
+
+.content {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.title-home{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.explore-button {
+  padding: 15px 30px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #1f95c3;
+}
+
+.chat-bubble {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000000d9;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 35px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.chat-bubble img {
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chat-title-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chat-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.chat-title2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chat-bubble p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsiveness for mobile and smaller screens */
+@media (max-width: 768px) {
+  .hero-section {
+    /* height: auto; Adjust height based on content */
+    padding: 20px;
+    margin-top: 10px; /* Reduce top margin */
+    border-radius: 15px; /* Slightly smaller radius for smaller screens */
+  }
+
+  .content {
+    position: static; /* Remove absolute positioning for better flow */
+    transform: none;
+    margin-top: 10px;
+    text-align: center; /* Center-align text for better readability */
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .explore-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .chat-bubble {
+    bottom: 10px;
+    right: 10px;
+    max-width: 150px;
+    padding: 10px 15px;
+  }
+
+  .chat-bubble img {
+    height: 40px;
+  }
+
+  .chat-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    width: 100%; /* Utilize full width */
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .title {
+    font-size: 1.5rem; /* Further reduce font size */
+  }
+
+  .explore-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .chat-bubble {
+    max-width: 120px;
+    padding: 8px 10px;
+  }
+
+  .chat-title {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 250px; /* Reduce height for medium screens */
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 200px; /* Further reduce height for small screens */
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+  }
+}
